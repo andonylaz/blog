@@ -30,7 +30,7 @@ class Blog(models.Model):
 
     def get_absolute_url(self):
         # must define a view called 'Blog-Detail'
-        return reverse('blogs.views.blog-detail' ,args=[str(self.id)])
+        return reverse('blog-detail', args=[str(self.id)])
 
 #Comment objects 
 class Comment(models.Model):
